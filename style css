@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1f2b5b, #2a3a8f);
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: rgba(255,255,255,0.08);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: none;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #ff7a59;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff5a36;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 12px;
+}
+
+.pass {
+    padding: 10px;
+    margin-bottom: 8px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 8px;
+    word-break: break-all;
+}
