@@ -1,0 +1,25 @@
+const digits = "0123456789";
+const lowercase = "abcdefghijklmnopqrstuvwxyz";
+const symbols = "!#$%&*+-=?@^_";
+
+document.getElementById("generate").addEventListener("click", function() {
+    const amount = Number(document.getElementById("amount").value);
+    const length = Number(document.getElementById("length").value);
+
+    let pool = "";
+
+    if (document.getElementById("numbers").checked) pool += digits;
+    if (document.getElementById("letters").checked) pool += lowercase;
+    if (document.getElementById("symbols").checked) pool += symbols;
+
+    const result = document.getElementById("result");
+    result.innerHTML = "";
+
+    for (let i = 0; i < amount; i++) {
+        let password = "";
+        for (let j = 0; j < length; j++) {
+            password += pool[Math.floor(Math.random() * pool.length)];
+        }
+        result.innerHTML += `<div class="pass">${password}</div>`;
+    }
+});
